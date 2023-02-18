@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import Link from 'next/link';
+import { toast } from 'react-hot-toast';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
         >
           Diego&apos;s profile
         </Link>
+        <button onClick={() => toast.success('Great!')}>Toast</button>
       </div>
     </>
   );
