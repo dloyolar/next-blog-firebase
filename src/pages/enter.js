@@ -1,10 +1,9 @@
-import { auth, googleAuthProvider } from '@/lib/firebase';
+import { useUser } from '@/hooks/useUser';
+import { auth, googleAuthProvider } from '@/services/firebase';
 import { signInWithPopup, signOut } from 'firebase/auth';
-import Image from 'next/image';
 
 const Enter = () => {
-  const user = null;
-  const username = null;
+  const { user, username } = useUser();
 
   return (
     <main>

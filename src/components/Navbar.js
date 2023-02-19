@@ -1,8 +1,8 @@
 import Link from 'next/link';
+import { useUser } from '@/hooks/useUser';
 
 export const Navbar = () => {
-  const user = null;
-  const username = null;
+  const { user, username } = useUser();
 
   return (
     <nav className="navbar">
